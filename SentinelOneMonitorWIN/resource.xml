@@ -1,0 +1,13 @@
+<component info='CentraStage Component'>
+  <general>
+    <name>SentinelOne Monitor [WIN] [ACS]</name>
+    <category>monitors</category>
+    <description>This Component Monitor checks the status of the SentinelOne service - running or stopped - and updates the antivirus status of the device's audit information accordingly.</description>
+    <uid>eb5abd36-698f-4bdc-aefc-efce98edd951</uid>
+    <hash />
+    <version>14</version>
+    <timeout>60</timeout>
+    <securityLevel>1</securityLevel>
+    <installType>powershell</installType>
+  </general>
+</component>

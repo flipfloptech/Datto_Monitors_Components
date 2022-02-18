@@ -1,0 +1,22 @@
+<component info='CentraStage Component'>
+  <general>
+    <name>Schedule Check Disk</name>
+    <category>scripts</category>
+    <description>Enumerates all Physical Volumes and scheduled Disk Check to run on Next Reboot.
+
+Flags InternalReboot and PendingFileRenameOperations.</description>
+    <uid>12319676-82d3-4cc6-9472-dfc80172e382</uid>
+    <hash />
+    <version>6</version>
+    <timeout>3600</timeout>
+    <securityLevel>1</securityLevel>
+    <installType>powershell</installType>
+  </general>
+  <variable idx='0'>
+    <name>IncludeBadSectors</name>
+    <type>boolean</type>
+    <direction>false</direction>
+    <description>Scan for Bad Sectors</description>
+    <defaultVal>false</defaultVal>
+  </variable>
+</component>

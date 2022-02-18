@@ -1,0 +1,16 @@
+<component info='CentraStage Component'>
+  <general>
+    <name>BitDefender Nuke Option</name>
+    <category>scripts</category>
+    <description>RUN FROM SAFE MODE!!
+RUN FROM SAFE MODE!!
+I REPEAT!!!
+RUN FROM SAFE MODE!!</description>
+    <uid>6475d1a2-1728-4a07-b159-ee5f051ea366</uid>
+    <hash />
+    <version>15</version>
+    <timeout>3600</timeout>
+    <securityLevel>5</securityLevel>
+    <installType>powershell</installType>
+  </general>
+</component>

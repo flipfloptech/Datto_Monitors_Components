@@ -1,0 +1,14 @@
+<component info='CentraStage Component'>
+  <general>
+    <name>DNSFilter Agent Deployment</name>
+    <category>scripts</category>
+    <description>Will download and install latest agent installer and install it with specified site secret key
+Required Site Variable: DnsFilter_SiteToken</description>
+    <uid>c2de3361-7b32-42b5-9019-0bba0873a469</uid>
+    <hash />
+    <version>55</version>
+    <timeout>3600</timeout>
+    <securityLevel>1</securityLevel>
+    <installType>powershell</installType>
+  </general>
+</component>

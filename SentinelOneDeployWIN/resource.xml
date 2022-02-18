@@ -1,0 +1,54 @@
+<component info='CentraStage Component'>
+  <general>
+    <name>SentinelOne Deploy [WIN] [ACS]</name>
+    <category>scripts</category>
+    <description>S1 Deployment Tool.
+
+Can utilize embedded installer. Network share location installer. Or download an installer utilizing site specific variables which must be defined.
+
+Will automatically install EMBEDDED COMPONENT if Validation Fails for any other METHOD.
+
+Require Site Variables: S1_SiteToken, S1_ManagementURL, S1_APIToken</description>
+    <uid>81471271-f8bf-4a5c-9443-45322d959822</uid>
+    <hash>085f36049dc896b1b58d7a234ca4d439</hash>
+    <version>45</version>
+    <timeout>3600</timeout>
+    <securityLevel>1</securityLevel>
+    <installType>powershell</installType>
+  </general>
+  <variable idx='0'>
+    <name>ForceReboot</name>
+    <type>boolean</type>
+    <direction>false</direction>
+    <description>If installation requires Reboot to be successful, force reboot if True</description>
+    <defaultVal>false</defaultVal>
+  </variable>
+  <variable idx='1'>
+    <name>ForceRebootDelay</name>
+    <type>string</type>
+    <direction>false</direction>
+    <description>Restart delay used with shutdown.exe /r /f /t x to restart the machine. This gives us time to exit the script cleanly before the reboot occurs.</description>
+    <defaultVal>15</defaultVal>
+  </variable>
+  <variable idx='2'>
+    <name>PackagePath</name>
+    <type>string</type>
+    <direction>false</direction>
+    <description>Network Path location for Installation file</description>
+    <defaultVal />
+  </variable>
+  <variable idx='3'>
+    <name>PackageSHA1</name>
+    <type>string</type>
+    <direction>false</direction>
+    <description>SHA1 hash of package file, must be specified.</description>
+    <defaultVal />
+  </variable>
+  <variable idx='4'>
+    <name>ForceEmbedded</name>
+    <type>boolean</type>
+    <direction>false</direction>
+    <description>Force utilization of the embedded installers.</description>
+    <defaultVal>false</defaultVal>
+  </variable>
+</component>
