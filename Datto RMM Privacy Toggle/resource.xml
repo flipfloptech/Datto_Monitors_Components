@@ -1,0 +1,16 @@
+<component info='CentraStage Component'>
+  <general>
+    <name>Datto RMM Privacy Toggle [ACS]</name>
+    <category>scripts</category>
+    <description>Toggles Privacy Mode regardless of if the user wants it.
+
+If enabled will disable
+If disabled will enable</description>
+    <uid>ffd83e04-1755-4a3f-9652-50b50c7cb68e</uid>
+    <hash />
+    <version>12</version>
+    <timeout>3600</timeout>
+    <securityLevel>5</securityLevel>
+    <installType>powershell</installType>
+  </general>
+</component>

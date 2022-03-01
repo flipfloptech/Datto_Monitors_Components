@@ -1,0 +1,13 @@
+<component info='CentraStage Component'>
+  <general>
+    <name>IPBan Installer [ACS]</name>
+    <category>scripts</category>
+    <description>Installs IPBan, enabled Windows Firewall, and Enables/Disables NLA as necessary depending on OS Version.</description>
+    <uid>906df07d-5126-4c4c-abfe-dc9dbbf31ea5</uid>
+    <hash />
+    <version>22</version>
+    <timeout>3600</timeout>
+    <securityLevel>2</securityLevel>
+    <installType>powershell</installType>
+  </general>
+</component>

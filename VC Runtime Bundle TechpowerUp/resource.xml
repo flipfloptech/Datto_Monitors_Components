@@ -1,0 +1,34 @@
+<component info='CentraStage Component'>
+  <general>
+    <name>VC Runtime Bundle TechpowerUp [ACS]</name>
+    <category>scripts</category>
+    <description>Installs techpower up vc runtime bundle</description>
+    <uid>8cf0ddb5-bc6e-4535-b5bd-933caf482895</uid>
+    <hash />
+    <version>13</version>
+    <timeout>3600</timeout>
+    <securityLevel>5</securityLevel>
+    <installType>powershell</installType>
+  </general>
+  <variable idx='0'>
+    <name>ForceReboot</name>
+    <type>boolean</type>
+    <direction>false</direction>
+    <description>Reboot server if required</description>
+    <defaultVal>false</defaultVal>
+  </variable>
+  <variable idx='1'>
+    <name>UseClosestServer</name>
+    <type>boolean</type>
+    <direction>false</direction>
+    <description>Selects server based on distance</description>
+    <defaultVal>true</defaultVal>
+  </variable>
+  <variable idx='2'>
+    <name>ForceRebootDelay</name>
+    <type>string</type>
+    <direction>false</direction>
+    <description>Delay to reboot</description>
+    <defaultVal>15</defaultVal>
+  </variable>
+</component>
