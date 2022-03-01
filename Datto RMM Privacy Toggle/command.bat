@@ -31,7 +31,10 @@ if (Test-Path $key)
         }
         if ($ExitCode -eq 0)
         {
-            $restart_args = @("-encodedCommand","UwB0AGEAcgB0AC0AUwBsAGUAZQBwACAALQBTAGUAYwBvAG4AZABzACAANgAwADsAIABTAHQAbwBwAC0AUAByAG8AYwBlAHMAcwAgAC0ATgBhAG0AZQAgACIAQwBhAGcAUwBlAHIAdgBpAGMAZQAiACAALQBGAG8AcgBjAGUAIAAtAEMAbwBuAGYAaQByAG0AOgAkAEYAYQBsAHMAZQA=")
+            $text_RestartCommand = "Start-Sleep -Seconds 60; Stop-Process -Name "CagService" -Force -Confirm:$False"
+            $bytes_RestartCommand = [System.Text.Encoding]::Unicode.GetBytes($text_RestartCommand)
+            $encoded_RestartCommand = [Convert]::ToBase64String($bytes_RestartCommand)
+            $restart_args = @("-encodedCommand",$encoded_RestartCommand)
             Start-Process -FilePath "powershell.exe" -ArgumentList $restart_args -WindowStyle Hidden
             Write-Host "[*] Scheduled CagService Termination in 60 seconds"
             Write-Host "[*] Please wait for CagService restart"
